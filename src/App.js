@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import "./app.scss";
-import { Button } from "carbon-components-react";
+import './app.scss';
+// import './App.css';
+import { Button } from 'carbon-components-react';
+import { Content } from 'carbon-components-react/es/components/UIShell';
+import TutorialHeader from './components/TutorialHeader';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        Hello Carbon! Well, not quite yet. This is the starting point for the Carbon tutorial.
-        <br />
-        <br />
-        <Button>Button</Button>
-      </div>
+      <>
+        <TutorialHeader />
+        <Content>
+          <Button>Button</Button>
+        </Content>
+      </>
     );
   }
 }
